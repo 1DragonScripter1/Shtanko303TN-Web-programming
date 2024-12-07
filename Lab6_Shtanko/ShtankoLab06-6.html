@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>303-ТН - Два друга, одне лихо</title>
+    <style>
+        body {
+            background-image: url("back.jpg");
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #222;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #dc143c;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #4b0082;
+            margin-top: 30px;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .profile-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            width: 45%;
+            box-sizing: border-box;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 10px;
+            border: 2px solid #4b0082;
+        }
+
+        .name {
+            font-weight: bold;
+            color: #008000;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .humor {
+            color: #8b0000;
+            font-style: italic;
+        }
+
+        .navigation-map {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .navigation-map img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .navigation-map area {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>303-ТН - Два друга, одне лихо <br>(усі фото не відповідають дійсності і взяті з відкритих джерел)</h1>
+        <div class="navigation-map">
+            <img src="image/friends_map.jpg" usemap="#friends-map" alt="Навігаційна карта друзів">
+            <map name="friends-map">
+                <area shape="poly" coords="253,31,248,196,290,215,330,157,328,81,283,13" href="#denys" alt="Денис" title="Денис Мельник">
+                <area shape="poly" coords="395,69,346,67,328,94,329,152,294,210,251,234,252,345,324,376,424,333,496,321,462,185" href="#yehor" alt="Єгор" title="Єгор Ткаченко">
+            </map>
+        </div>
+
+        <div class="profile">
+            <div class="profile-item">
+                <img src="image/denys.jpg" alt="Денис Мельник" class="profile-image">
+                <span class="name" id="denys"><br>Денис Мельник</span>
+                <p>Майстер прокрастинації та геній виправдань. Може не спати три доби, готуючись до екзамену, а потім заснути на самому екзамені. Якось раз він не здав курсову, бо "загубив її у паралельному вимірі". Викладач, на диво, майже повірив, бо Денис ще й намалював схему цього виміру.
+                <span class="humor">Подейкують, що Денис домовився з деканом, що той не буде його відраховувати, якщо Денис пообіцяє ніколи не випускатись.</span></p>
+            </div>
+            <div class="profile-item">
+                <img src="image/yehor.jpg" alt="Єгор Ткаченко" class="profile-image">
+                <span class="name" id="yehor"><br>Єгор Ткаченко</span>
+                <p>Ходячий генератор хаосу та непередбачуваних ідей. Одного разу він вирішив написати вірус, який би автоматично ставив "відмінно" в заліковку. Вірус майже спрацював... але замість заліковки Єгора він зламав сайт Пенсійного фонду.
+                <span class="humor">Єгор впевнений, що одного разу він створить штучний інтелект, який захопить світ. Ми не впевнені, чи варто його зупиняти, бо принаймні тоді стипендію може почнуть платити вчасно.</span></p>
+            </div>
+        </div>
+
+
+        <p>Разом вони - вибухова суміш, здатна зірвати будь-який дедлайн, завалити будь-який проєкт і довести до нервового зриву будь-якого викладача. Але, попри все, вони залишаються найкращими друзями, готовими підставити один одному... <span class="humor">підніжку</span>.</p>
+        <p>Їхня дружба пережила стільки, що інша б вже розпалася на атоми, або принаймні подала одне на одного в суд. Та цих двох, здається, нічого не бере. Мабуть, у них просто почуття гумору однакове - таке ж чорне, як і їхні перспективи на світле майбутнє.</p>
+    </div>
+</body>
+</html>

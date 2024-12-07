@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма замовлення товару</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    form {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 100px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    .radio-group label,
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .button-container {
+      text-align: center;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .product-list label{
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+    .product-list input{
+        margin-bottom: 5px;
+    }
+    fieldset {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    legend {
+        padding: 0 5px;
+    }
+  </style>
+</head>
+<body>
+    <form action="result.html" method="get" target="_blank">
+    <h2>Форма замовлення товару</h2>
+
+    <label for="bank_account">Номер банківського рахунку:</label>
+    <input type="text" id="bank_account" name="bank_account" required>
+
+    <label for="user_id">Особистий номер користувача:</label>
+    <input type="text" id="user_id" name="user_id" required>
+
+    <label>Список товарів:</label>
+    <div class="product-list">
+      <input type="checkbox" id="product1" name="products" value="product1">
+      <label for="product1">Товар 1</label><br>
+      <input type="checkbox" id="product2" name="products" value="product2">
+      <label for="product2">Товар 2</label><br>
+      <input type="checkbox" id="product3" name="products" value="product3">
+      <label for="product3">Товар 3</label><br>
+      <input type="checkbox" id="product4" name="products" value="product4">
+      <label for="product4">Товар 4</label><br>
+    </div>
+
+    <label for="comments">Коментарі:</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <fieldset>
+        <legend>Вид оплати:</legend>
+        <div class="radio-group">
+          <input type="radio" id="cash" name="payment_type" value="cash" required>
+          <label for="cash">Готівковий</label>
+          <input type="radio" id="non_cash" name="payment_type" value="non_cash">
+          <label for="non_cash">Безготівковий</label>
+        </div>
+    </fieldset>
+    
+
+    <fieldset>
+        <legend>Додаткова інформація:</legend>
+        <div class="checkbox-group">
+          <input type="checkbox" id="balance" name="info" value="balance">
+          <label for="balance">Дані про залишки на рахунку</label>
+          <input type="checkbox" id="payments" name="info" value="payments">
+          <label for="payments">Список останніх виплат</label>
+        </div>
+    </fieldset>
+
+    <div class="button-container">
+      <button type="submit">Замовити</button>
+    </div>
+  </form>
+</body>
+</html>

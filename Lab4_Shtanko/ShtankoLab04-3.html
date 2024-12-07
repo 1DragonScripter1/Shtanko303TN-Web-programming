@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вертикальні рядки, що біжать</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+        .marquee-wrapper {
+            display: table; /* Табличне розташування для розтягування стовпців за висотою екрану*/
+            width: 100%;
+            height: 100vh;
+        }
+        .marquee-container {
+            display: table-cell;
+            width: 20%;
+            vertical-align: top;
+            overflow: hidden;
+        }
+        marquee {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            font-size: 18px;
+        }
+        img {
+            max-width: 80%;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee-wrapper">
+        <div class="marquee-container" style="background-color: #ffdddd;">
+            <marquee behavior="alternate" direction="up">
+                1. Коливання:<br>
+                <img src="img.jpg" alt="Зображення">
+                Текст
+                <img src="img.jpg" alt="Зображення">
+            </marquee>
+        </div>
+        <div class="marquee-container" style="background-color: #ddffdd;">
+            <marquee behavior="scroll" direction="up">
+                2. Знизу вгору:<br>
+                <img src="img.jpg" alt="Зображення">
+                <img src="img.jpg" alt="Зображення">
+                <img src="img.jpg" alt="Зображення">
+            </marquee>
+        </div>
+        <div class="marquee-container" style="background-color: #ddddff;">
+            <marquee behavior="slide" direction="down">
+                3. Згори вниз:<br>
+                <img src="img.jpg" alt="Зображення">
+                <img src="img.jpg" alt="Зображення">
+            </marquee>
+        </div>
+        <div class="marquee-container" style="background-color: #ffffdd;">
+            <marquee behavior="scroll" direction="up" scrolldelay="100">
+                4. Запізнення 1:<br>
+                Текст з запізненням
+            </marquee>
+        </div>
+        <div class="marquee-container" style="background-color: #ffddff;">
+            <marquee behavior="scroll" direction="up" scrolldelay="300">
+                5. Запізнення 2:<br>
+                Текст з більшим запізненням
+            </marquee>
+        </div>
+    </div>
+</body>
+</html>

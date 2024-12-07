@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0ffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #e0f8f8;
+            border: 2px solid #a9d9d9;
+            width: 500px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h1 {
+            color: red;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="date"],
+        .form-container input[type="tel"],
+        .form-container input[type="email"] {
+            width: calc(100% - 10px);
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container .interests input {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin: 3px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-container .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .form-container input[type="button"],
+        .form-container input[type="submit"] {
+            background-color: #d9f9f9;
+            border: 1px solid #a9d9d9;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .form-container input[type="button"]:hover,
+        .form-container input[type="submit"]:hover {
+            background-color: #b9e9e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Анкета</h1>
+        <form>
+            <label for="lastname">1. Прізвище:</label>
+            <input type="text" id="lastname" name="lastname">
+
+            <label for="firstname">2. Ім'я, по батькові:</label>
+            <input type="text" id="firstname" name="firstname">
+
+            <label for="birthdate">3. Число і рік народження:</label>
+            <input type="date" id="birthdate" name="birthdate">
+
+            <label for="address">4. Домашня адреса:</label>
+            <input type="text" id="address" name="address">
+
+            <label for="workplace">5. Місце навчання (роботи):</label>
+            <input type="text" id="workplace" name="workplace">
+
+            <label for="phone">6. Домашній (робочий) телефон:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">7. E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label>8. Області наукових інтересів:</label>
+            <div class="interests">
+                <input type="text" name="interest1">
+                <input type="text" name="interest2">
+                <input type="text" name="interest3">
+                <input type="text" name="interest4">
+                <input type="text" name="interest5">
+                <input type="text" name="interest6">
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Відмінити введення">
+                <input type="submit" value="Надіслати дані та перейти до 2 етапу реєстрації">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Єдність стилю</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: darkblue;
+        margin-bottom: 30px;
+    }
+    p, div {
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f8f8f8;
+    }
+    div h2{
+        color: darkgreen;
+    }
+    p.special {
+      background-color: #e0f0e0;
+      border: 2px dashed darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>Єдність стилю для абзаців та розділів</h1>
+
+  <p>Це перший абзац. Він демонструє загальний стиль для елементів &lt;p&gt; та &lt;div&gt; на цій сторінці.</p>
+
+  <div>
+    <h2>Це розділ (div)</h2>
+    <p>Це абзац всередині розділу. Він також наслідує загальний стиль.</p>
+    <p>І ще один абзац в цьому розділі, щоб продемонструвати, як виглядає декілька абзаців.</p>
+  </div>
+
+  <p class = "special">Це ще один абзац. Зверніть увагу, що він також має загальний стиль, але виділяється іншим фоном та типом рамки, бо має клас "special". </p>
+
+  <div>
+    <h2>Другий розділ (div)</h2>
+    <p>Цей абзац знаходиться у другому розділі та демонструє, що стиль застосовується до всіх елементів &lt;p&gt; та &lt;div&gt; на сторінці.</p>
+  </div>
+
+</body>
+</html>

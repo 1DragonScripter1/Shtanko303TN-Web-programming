@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивна розмітка</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+    .wrapper {
+      display: grid;
+      grid-gap: 3px;
+      width: 100%;
+      min-height: 100vh;
+      grid-template-columns: 35% 35% 30%;
+      grid-template-rows: repeat(4, 1fr);
+    }
+    .wrapper > div {
+      border: 1px solid lightgray;
+    }
+    .lightblue { background-color: lightblue; grid-column: 1 / span 2; grid-row: 1; }
+    .gray { background-color: gray; grid-column: 3; grid-row: 1 / span 3; }
+    .aqua { background-color: aqua; grid-column: 1; grid-row: 2; }
+    .red { background-color: red; grid-column: 2; grid-row: 2; }
+    .yellow { background-color: yellow; grid-column: 2; grid-row: 3; }
+    .green { background-color: green; grid-column: 1; grid-row: 3; }
+    .orange { background-color: orangered; grid-column: 1 / span 3; grid-row: 4; }
+
+    @media (max-width: 499px) {
+      .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+      }
+      .lightblue { grid-column: 1; grid-row: 1; }
+      .gray { grid-column: 1; grid-row: 2 / span 2; }
+      .aqua { grid-column: 1; grid-row: 4; }
+      .red { grid-column: 1; grid-row: 5; }
+      .yellow { grid-column: 1; grid-row: 7; }
+      .green { grid-column: 1; grid-row: 6; }
+      .orange { grid-column: 1; grid-row: 8; }
+    }
+
+    @media (min-width: 500px) and (max-width: 749px) {
+        .wrapper {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, 1fr);
+        }
+        .lightblue { grid-column: 1 / span 2; grid-row: 1; }
+        .gray { grid-column: 2; grid-row: 2 / span 2; }
+        .aqua { grid-column: 1; grid-row: 2; }
+        .red { grid-column: 1; grid-row: 3; }
+        .yellow { grid-column: 1; grid-row: 5; }
+        .green { grid-column: 1; grid-row: 4; }
+        .orange { grid-column: 1 / span 2; grid-row: 6; }
+    }
+    @media (min-width: 750px) and (max-width: 949px) {
+      .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+      }
+      .lightblue { grid-column: 1 / span 2; grid-row: 1; }
+      .gray { grid-column: 3; grid-row: 1 / span 3; }
+      .aqua { grid-column: 1; grid-row: 2; }
+      .red { grid-column: 2; grid-row: 2; }
+      .yellow { grid-column: 1; grid-row: 3; }
+      .green { grid-column: 2; grid-row: 3; }
+      .orange { grid-column: 1 / span 3; grid-row: 4; }
+    }
+    @media (min-width: 950px) and (max-width: 1199px) {
+      .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+      }
+      .lightblue { grid-column: 1 / span 2; grid-row: 1; }
+      .gray { grid-column: 3; grid-row: 1 / span 3; }
+      .aqua { grid-column: 1; grid-row: 2; }
+      .red { grid-column: 2; grid-row: 2; }
+      .yellow { grid-column: 1; grid-row: 3; }
+      .green { grid-column: 2; grid-row: 3; }
+      .orange { grid-column: 1 / span 3; grid-row: 4; }
+    }
+    @media (min-width: 1200px) {
+      .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+      }
+      .lightblue { grid-column: 1 / span 2; grid-row: 1; }
+      .gray { grid-column: 3; grid-row: 1 / span 3; }
+      .aqua { grid-column: 1; grid-row: 2; }
+      .red { grid-column: 2; grid-row: 2; }
+      .yellow { grid-column: 1; grid-row: 3; }
+      .green { grid-column: 2; grid-row: 3; }
+      .orange { grid-column: 1 / span 3; grid-row: 4; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="lightblue"></div>
+    <div class="gray"></div>
+    <div class="aqua"></div>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="orange"></div>
+  </div>
+</body>
+</html>

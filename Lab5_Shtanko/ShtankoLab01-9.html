@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Штанько Лабораторна 01-9</title>
+    <meta name="description" content="Лабораторна робота з веб-розробки студентки групи 303-ТН Штанько Дінари.">
+    <meta name="keywords" content="веб-розробка, HTML, лаборатороная робота, Штанько, 303-ТН">
+    <style>
+        body {
+            background-color: #f8f8ff;
+            color: #2f4f4f;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #483d8b;
+            border-bottom: 2px solid #483d8b;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #008080;
+            margin-top: 30px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            border: 1px solid #d3d3d3;
+            padding: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        code {
+            font-size: 0.9em;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-style: italic;
+            color: #708090;
+            border-top: 1px dashed #708090;
+            padding-top: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            background-color: #f0fff0;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="ShtankoLab05-3.html">Мої гіперпосилання</a>
+        <h1>Про себе</h1>
+        <p>Мене звати Дінара, я студентка групи 303-ТН.  Я народилася і виросла в чудовому місті <span class="highlight" style="font-weight: bold;">Полтава</span>. Зараз я навчаюся в <span class="highlight" style="font-weight: bold;">НУПП</span> (Національний Університет "Полтавська політехніка імені Юрія Кондратюка"). З дитинства я цікавилася <i>різними</i> сферами, від малювання до спорту. Зараз я захоплююся <u>програмуванням</u>, і сподіваюся стати професіоналом у цій галузі.</p>
+        <p>Моя мета - навчитися створювати корисні та цікаві веб-додатки, які б були зручними та інноваційними. Я вірю, що <span style="text-decoration: underline;"><i>технології</i></span> мають величезний потенціал і можуть змінити світ на краще.  Я прагну постійно розвиватися та вдосконалювати свої навички, щоб бути в курсі останніх трендів у світі IT.</p>
+
+        <h1>Моє хобі</h1>
+        <p>У вільний час я люблю займатися різними речами. Одне з моїх найбільших захоплень - це читання книг. Я люблю занурюватися в <span class="highlight" style="font-weight: bold;">захоплюючі історії</span> та відкривати для себе нові світи.  Крім того, я люблю проводити час на свіжому повітрі, гуляти в парку або кататися на велосипеді.</p>
+        <p> Також <i><b>музика</b></i> займає важливе місце в моєму житті. Я не тільки люблю її слухати, але й грати на музичних інструментах. Це допомагає мені розслабитися і висловити свої емоції. А ще я люблю подорожувати і пізнавати різні культури.</p>
+        <h2>Програмування</h2>
+        <p>Ось приклад коду на C++, який я вивчаю:</p>
+        <pre>
+            <code>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+  int n;
+  cout &lt;&lt; "Enter a positive integer: ";
+  cin &gt;&gt; n;
+
+  long long factorial = 1;
+
+  if (n &lt; 0) {
+    cout &lt;&lt; "Factorial is not defined for negative numbers." &lt;&lt; endl;
+  } else {
+    for (int i = 1; i &lt;= n; ++i) {
+      factorial *= i;
+    }
+    cout &lt;&lt; "Factorial of " &lt;&lt; n &lt;&lt; " = " &lt;&lt; factorial &lt;&lt; endl;
+  }
+  return 0;
+}
+            </code>
+        </pre>
+
+        <footer>
+            <p><a href="mailto:d.shtanko@gmail.com">Студентка групи 303-ТН Штанько Дінара</a></p>
+        </footer>
+    </div>
+</body>
+</html>
